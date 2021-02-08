@@ -19,6 +19,10 @@ navbar-brand{
     max-width: 1020px;
     margin: 30px;
 }
+
+.carousel-main{
+    max-width: 90%;
+}
 .carousel-item{
     width: 100%;
 }
@@ -52,4 +56,16 @@ navbar-brand{
 
 .carousel-indicators{
     z-index: 2;
+}
+
+.col-lg-4 .card{
+    width: 260px;
+}
+
+.main-cards{
+    margin: 10px;
+}
+
+.img-card{
+    width: 200px;
 }
