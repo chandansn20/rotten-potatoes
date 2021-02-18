@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotten Potatoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://kit.fontawesome.com/b486dd5239.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logo.png" height="65"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Movies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Top 10 by Critics</a></li>
+                              <li><a class="dropdown-item" href="#">Top Grossing</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Anime
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Trending Top 10</a></li>
+                              <li><a class="dropdown-item" href="#">Top Rated</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Web Series
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Most Popular</a></li>
+                              <li><a class="dropdown-item" href="#">Top 10 in IMDB</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                    <button class="btn btn-primary">Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <div class="trending">
+                        <h2>Top Trending...</h2>
+                    </div>
+                    <div class="banner">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./kgfH.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./kgfV.jpg" alt="" class="poster">
+                                            </div>
+
+                                            <div class="col details">
+                                                <h5>KGF Chapter 2</h5>
+                                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./fvfH.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./fvfV.jfif" alt="" class="poster">
+                                            </div>
+
+                                            <div class="col details">
+                                                <h5>Ford vs Ferrari</h5>
+                                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./jujuH.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col">
+                                                <img src="./jujuV.jpg" alt="" class="poster">
+                                            </div>
+
+                                            <div class="col details">
+                                                <h5>Jujutsu Kaisen</h5>
+                                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h2 class="text-right mt-4">Trending Stories</h2>
+                    <div class="d-flex">
+                        <img src="./kgfH.jpg" alt="" class="card-img trending-stories-img">
+                        <h5 class="card-title p-2">The Mac mini with the M1 processor is discounted at several retailers</h5>
+                    </div>
+                    <hr class="divider"/>
+                    <div class="d-flex">
+                        <img src="./kgfH.jpg" alt="" class="card-img trending-stories-img">
+                        <h5 class="card-title p-2">The Mac mini with the M1 processor is discounted at several retailers</h5>
+                    </div>
+                    <hr class="divider"/>
+                    <div class="d-flex">
+                        <img src="./kgfH.jpg" alt="" class="card-img trending-stories-img">
+                        <h5 class="card-title p-2">The Mac mini with the M1 processor is discounted at several retailers</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card Genres-card my-3">
+                        <img src="./posters/genre/scifi.jpg" alt="" class="card-img Genres-img">
+                        <div class="card-img-overlay" style="background-color: rgba(0, 0, 139, 0.404);">
+                           <h5 class="card-title overlay-title">Sci-Fi</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card Genres-card my-3">
+                        <img src="./posters/genre/action.jpg" alt="" class="card-img Genres-img">
+                        <div class="card-img-overlay" style="background-color: rgba(139, 0, 0, 0.404);">
+                           <h5 class="card-title overlay-title">Action</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card Genres-card my-3">
+                        <img src="./posters/genre/comedy.jpg" alt="" class="card-img Genres-img">
+                        <div class="card-img-overlay" style="background-color: rgba(139, 137, 0, 0.404);">
+                           <h5 class="card-title overlay-title">Comedy</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card Genres-card my-3">
+                        <img src="./posters/genre/drama.jpg" alt="" class="card-img Genres-img">
+                        <div class="card-img-overlay" style="background-color: rgba(10, 104, 23, 0.404);">
+                           <h5 class="card-title overlay-title">Drama</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies-area my-3">
+                <div class="section-heading d-flex justify-content-md-between">
+                    <h5 class="heading">
+                        Random picks
+                    </h5>
+                    <h6>more <i class="fa fa-chevron-right"></i> </h6>
+                </div>
+                <div class="owl-carousel">
+                    <div class="card">
+                        <img src="./posters/tenet.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Tenet</h5>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                3.9
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./posters/silicon valley.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Silcon Valley</h5>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                4.3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./posters/mrrobot.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Mr. Robot</h5>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                4.8
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./posters/steins.png" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Steins;Gate</h5>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                4.5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./posters/troyy.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Troy</h5>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                3.7
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row mt-5 justify-content-center py-5">
+            <div class="col-11">
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12mx-auto a">
+                        <h3 class="text-muted mb-md-0 mb-5 bold-text">Rotten Potatoes</h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Portfolio</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                        <p class="mb-1">JP Nagar and Basaveshwaranagar</p>
+                        <p>Bengaluru</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> 
+                        <br/>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>ADITYA CHAKRAVARTHI</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                        <h6 class="text-muted bold-text"><b>CHANDAN S NADIG</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> chandansn.is19@bmsce.ac.in</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
