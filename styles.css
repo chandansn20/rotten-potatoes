@@ -147,3 +147,36 @@ h3 {
 .rights {
     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
 }
+
+/*Sign In Page*/
+.sign-in-card{
+    max-width: 360px;
+    top: 30vh;
+}
+
+.sign-in-card .form-text{
+    font-size: 0.2em;
+}
+
+input[type=text],input[type=password]{
+    width: 100%;
+    padding: 12px 40px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group i.fa-user{
+    position: absolute;
+    left: 50px;
+    top: 186px;
+    color: gray;
+}
+
+.form-group i.fa-lock{
+    position: absolute;
+    left: 50px;
+    top: 286px;
+    color: gray;
+}
