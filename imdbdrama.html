@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotten Potatoes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://kit.fontawesome.com/b486dd5239.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="logo.png" height="65"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Movies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Top 10 by Critics</a></li>
+                              <li><a class="dropdown-item" href="#">Top Grossing</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Anime
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Trending Top 10</a></li>
+                              <li><a class="dropdown-item" href="#">Top Rated</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Web Series
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Most Popular</a></li>
+                              <li><a class="dropdown-item" href="#">Top 10 in IMDB</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                    <button class="btn btn-primary">Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container critics">
+            <div class="text-center pt-3">
+                <h1>Top Drama</h1>
+            </div>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">1) The Shawshank Redemption</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/shawshank.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1994</h4>
+                        <br/>
+                        <h4>Actors : Tim Robbins, Morgan Freeman</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>                  
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">2) 12 Angry Men</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/angrymen.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1957</h4>
+                        <br/>
+                        <h4>Actors : Henry Fonda, Lee J. Cobb</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">3) Pulp Fiction</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/pupl.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1994</h4>
+                        <br/>
+                        <h4>Actors : John Travolta, Uma Thurman</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">4) Schindler's List</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/slist.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1993</h4>
+                        <br/>
+                        <h4>Actors : Liam Neeson, Ralph Fiennes</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">5) Forrest Gump</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/forrest.png" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1994</h4>
+                        <br/>
+                        <h4>Actors : Tom Hanks, Robin Wright</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold through the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">6) Fight Club</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/fight club.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1999</h4>
+                        <br/>
+                        <h4>Actors : Brad Pitt, Edward Norton</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">7) The Green Mile</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/The-Green-Mile.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1999</h4>
+                        <br/>
+                        <h4>Actors : Tom Hanks, Michael Clarke Duncan</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">8) Saving Private Ryan</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/savingprivateryan2.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 1998</h4>
+                        <br/>
+                        <h4>Actors : Tom Hanks, Matt Damon</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">9) The Prestige</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/prestige.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 2006</h4>
+                        <br/>
+                        <h4>Actors : Christian Bale, Hugh Jackman</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="box">
+                <div class="row py-5 px-5">
+                    <h3 class="mb-4">10) Gladiator</h3>
+                    <div class="col-md-4">
+                        <img src="./posters/gladiator.jpg" alt="" class="card-img critics-img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Year of Release : 2000</h4>
+                        <br/>
+                        <h4>Actors : Russell Crowe, Joaquin Phoenix</h4>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <p>A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.</p>                  
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            
+            
+        </div>
+    </main>
+    <footer>
+        <div class="row mt-5 justify-content-center py-5">
+            <div class="col-11">
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12mx-auto a">
+                        <h3 class="text-muted mb-md-0 mb-5 bold-text">Pepper.</h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Portfolio</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                        <p class="mb-1">JP Nagar and Basaveshwaranagar</p>
+                        <p>Bengaluru</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Pepper All Rights Reserved.</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>ADITYA CHAKRAVARTHI</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> adityachakravarthi.is19</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                        <h6 class="text-muted bold-text"><b>CHANDAN S NADIG</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> chandansn.is19</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
